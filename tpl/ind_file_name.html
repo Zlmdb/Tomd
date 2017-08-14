@@ -1,0 +1,14 @@
+{{include './public/header'}}
+
+<div id="main">
+	<h3>{{title}}</h3>
+	<ul>
+		{{each list}}
+	    <li><a href="{{$value.url}}">{{$value.title}}</a></li>
+	    {{/each}}
+	    <li>循环之外（测试1）</li>
+	    <li>循环之外（测试2）</li>
+	</ul>
+</div>
+
+{{include './public/footer'}}
